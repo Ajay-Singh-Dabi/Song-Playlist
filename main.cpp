@@ -4,6 +4,7 @@
 #include<cctype>
 #include<iomanip>
 #include<limits>
+using namespace std;
 
 class Song{
     friend std::ostream &operator<<(std::ostream &os,const Song &s);
@@ -67,6 +68,9 @@ void display_playlist(const std::list<Song>&playlist,const Song &current_song){
 }
 
 int main(){
+    std::cout<<"\n\t\t\t-------------------------";
+    std::cout<<"\n\t\t\t|     Song PlayList     |"<<std::endl;
+    std::cout<<"\t\t\t-------------------------"<<endl;
     std::list<Song>playlist{
         {"God's Plan",  "Drake",  5},
         {"Never Be The Same",  "Camila Cabello",   5},
